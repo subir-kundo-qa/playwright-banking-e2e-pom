@@ -39,5 +39,7 @@ test('End to End Banking Flow', async ({ page }) => {
     const FilterPageL = new FilterPage(page);
     await FilterPageL.FilterMethod(accountName, fromDate, transactionTable, toDates);
 
+    await page.pause();
+
 
 });
