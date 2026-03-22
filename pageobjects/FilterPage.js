@@ -22,7 +22,8 @@ class FilterPage {
         await this.toInput.fill(toDates);
         await this.clickApply.click();
         await expect(transactionTable.locator('tr').filter({ hasText: accountName })).toBeVisible();
-    console.log("Account Name Verified Successfully after Filter");
+        console.log("Account Name Verified Successfully after Filter");
+    
 
     }
 }
