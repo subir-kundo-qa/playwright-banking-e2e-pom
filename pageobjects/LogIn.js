@@ -3,7 +3,7 @@ class LogIn {
         this.page = page;
         this.userEmail = page.getByTestId("username-input");
         this.userPass = page.getByTestId("password-input")
-        this.signIn = page.getByRole("button", { name: 'Login' });
+        this.signIn = page.getByTestId("login-button");
 
     }
 
