@@ -13,7 +13,7 @@ export default defineConfig({
 
   use: {
     browserName: 'chromium',
-    headless: false, // Recommended for CI or automation
+    headless: false, 
     screenshot: 'only-on-failure',
     trace: 'on-first-retry',
     //...devices ['iPhone 15 Pro Max']
