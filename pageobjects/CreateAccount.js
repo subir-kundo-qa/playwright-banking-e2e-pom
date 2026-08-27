@@ -8,7 +8,6 @@ class CreateAccount {
         this.selectOption = page.getByRole('option', { name: 'Savings Account' });
         this.addBalance = page.locator("#initial-balance");
         this.createButton = page.getByRole("button", { name: "Save Account" });
-
     }
 
     async CreateAccountP(accountName, initialBalance) {
@@ -20,7 +19,6 @@ class CreateAccount {
         await this.createButton.click();
         await expect(this.page.getByText(accountName)).toBeVisible();
         console.log("Account Name verified Successfully");
-
 
     }
 }
