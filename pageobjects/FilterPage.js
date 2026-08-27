@@ -9,7 +9,6 @@ class FilterPage {
         this.fromInput = page.getByTestId("date-from-input");
         this.toInput = page.getByTestId("date-to-input");
         this.clickApply = page.getByRole('button', {name: "Apply"});
-
     }
 
     async FilterMethod (accountName,fromDate,transactionTable,toDates)
@@ -23,7 +22,6 @@ class FilterPage {
         await this.clickApply.click();
         await expect(transactionTable.locator('tr').filter({ hasText: accountName })).toBeVisible();
         console.log("Account Name Verified Successfully after Filter");
-    
 
     }
 }
